@@ -783,6 +783,17 @@ config SENSORS_LTR559
 	  To compile this driver as a module, choose M here: the
 	  module will be called ltr559.
 
+config SENSORS_LTR559_WT88047
+	tristate "LTR559 light and proximity device driver for wt88047"
+	depends on I2C
+	default n
+	help
+	  Say Y here you want to enable for the liteon ltr559
+	  light and proximity sensors driver.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called ltr559.
+
 config SENSORS_MMC3416X
 	tristate "MMC3416xPJ 3-axis magnetic sensor driver"
 	depends on I2C
